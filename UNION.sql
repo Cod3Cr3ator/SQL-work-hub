@@ -1,4 +1,5 @@
--- UNION helps us to compine the row from same opr different tables 
+-- UNION helps us to compine the row from same different tables 
+-- Put results together in one list
 -- On the example below we are using both denographics & salary table 
 --  We are filtering the old and highly paid employees 
 

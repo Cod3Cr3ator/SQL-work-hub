@@ -1,7 +1,13 @@
 -- JOIN this helps us to join the tables 
--- this joins both tables
-SELECT dem.first_name, sal.first_name
-FROM employee_demographics AS dem
-JOIN employee_salary AS sal;
+-- combines tables side-by-side (columns)
 
--- Joining the 
+SELECT sal.employee_id, dem.first_name, dem.last_name, sal.salary
+FROM employee_demographics AS dem
+INNER JOIN employee_salary AS sal
+	ON dem.employee_id = sal.employee_id;
+
+-- Joining the outer join using RIGHT or LEFT
+SELECT sal.employee_id, dem.first_name, dem.last_name, sal.salary
+FROM employee_demographics AS dem
+RIGHT JOIN employee_salary AS sal
+	ON dem.employee_id = sal.employee_id;
